@@ -1,0 +1,36 @@
+<suite name="SuiteName">
+	
+	
+	<test name="Login Test" allow-return-values="true">
+		<classes>
+			<class name="com.ascend.core.ddf.testcases.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Patient List" allow-return-values="true">
+		<classes>
+			<class name="com.ascend.core.ddf.testcases.PatientsList" />
+		</classes>
+	</test>
+	
+	<test name="Batch Orders" allow-return-values="true">
+		<classes>
+			<class name="com.ascend.core.ddf.testcases.BatchOrders" />
+		</classes>
+	</test>
+	<test name="Reports" allow-return-values="true">
+		<classes>
+			<class name="com.ascend.core.ddf.testcases.Reports" />
+		</classes>
+	</test>
+	<test name="Support" allow-return-values="true">
+		<classes>
+			<class name="com.ascend.core.ddf.testcases.Support" />
+		</classes>
+	</test>
+	
+	
+	
+	
+</suite>
+
