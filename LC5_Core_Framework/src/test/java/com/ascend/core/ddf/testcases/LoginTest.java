@@ -47,7 +47,7 @@ public class LoginTest extends BaseTest{
 		
 		type("username_xpath","*****");
 		type("pass_xpath","******");
-		type("facility_xpath", "HED");
+		type("facility_xpath", "*****");
 		click("loginbtn_xpath");
 		test.log(LogStatus.INFO, "Login Test Passed. Login to app successfully");
 		
