@@ -1,11 +1,13 @@
 package com.ascend.core.ddf.base;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,12 +16,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import com.ascend.core.ddf.util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
+
 
 public class BaseTest {
 	public WebDriver driver;
@@ -170,7 +175,8 @@ public class BaseTest {
 		//takeScreenShot();
 		Assert.fail(msg);
 	}
-	/*
+	
+	
 	public void takeScreenShot(){
 		// fileName of the screenshot
 		Date d=new Date();
@@ -187,7 +193,11 @@ public class BaseTest {
 		test.log(LogStatus.INFO,"Screenshot-> "+ test.addScreenCapture(System.getProperty("user.dir")+"//screenshots//"+screenshotFile));
 			
 	}
-	*/
+	
+	
+	
+	
+	
 	
 	
 	

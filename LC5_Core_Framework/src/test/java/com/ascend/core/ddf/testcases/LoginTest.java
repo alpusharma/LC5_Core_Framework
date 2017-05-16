@@ -15,11 +15,15 @@ public class LoginTest extends BaseTest{
 	
 	@Test
 	public void testB(){
-		String testCaseName="TestB";
+		String testCaseName="LoginTest";
+		test=rep.startTest("LoginTest");
+		test.log(LogStatus.INFO, "Starting the LoginTest");
 		
 		
 		openBrowser("Mozilla");
+		test.log(LogStatus.INFO, "Opened the mozilla firefox browser");
 		navigate("appurl");
+		test.log(LogStatus.INFO, "Navigate the lc5 url");
 		
 		
 		
@@ -32,18 +36,24 @@ public class LoginTest extends BaseTest{
 		softAssert.assertTrue(false, "Err 2");
 		softAssert.assertTrue(true,  "Err 3");
 		softAssert.assertTrue(false, "Err 4");
+		test.log(LogStatus.FAIL, "Screenshot->"+test.addScreenCapture("D:\\flowertest.jpg"));
+		
+		
+		
 			
 		//check if username field is present
 				if(!isElementPresent("username_id"))
 					reportFailure("Username field is not present");//critical failure
 		
-		type("username_xpath","***");
-		type("pass_xpath","****");
+		type("username_xpath","*****");
+		type("pass_xpath","******");
 		type("facility_xpath", "HED");
 		click("loginbtn_xpath");
+		test.log(LogStatus.INFO, "Login Test Passed. Login to app successfully");
 		
-		verifyTitle();
+		//verifyTitle();
 		//reportFail("");
+		
 	
 		
 	}
