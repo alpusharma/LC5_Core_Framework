@@ -19,9 +19,9 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
-
 import com.ascend.core.ddf.util.ExtentManager;
 import com.relevantcodes.extentreports.ExtentReports;
+import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
