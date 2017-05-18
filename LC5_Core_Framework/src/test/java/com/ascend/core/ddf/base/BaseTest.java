@@ -185,7 +185,7 @@ public class BaseTest {
 		// store screenshot in that file
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"//screenshots//"+screenshotFile));
+			Files.copy(scrFile, new File(System.getProperty("user.dir")+"//screenshots//"+screenshotFile));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
